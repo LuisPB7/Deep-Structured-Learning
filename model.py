@@ -185,6 +185,6 @@ class NLIModel(pl.LightningModule):
         # show test_loss and test_acc in progress bar but only log test_loss
         results = {
             'progress_bar': tqdm_dict,
-            'log': {'test_loss': val_loss_mean.item()}
+            'log': {'test_loss': test_loss_mean.item()}
         }
         return results    
